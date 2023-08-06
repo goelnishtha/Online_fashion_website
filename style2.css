@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(53, 49, 49, 1);
+    color: #fff;
+    
+}
+
+header {
+    background-color: #0e0d0d;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0px;
+}
+
+.logo {
+    margin: 0;
+    padding: 8px;
+
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 30px ;
+    padding: 2px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container{
+    display:flexbox;
+    height: 1000px;
+}
+.content {
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+    font-family:"Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-style: italic;
+    font-variant:inherit;
+    text-transform: none;
+    text-align: center;
+    padding: 10px;
+}
+.container .About{
+    width: 120px;
+    padding: 10px; 
+    font-size: xx-large; 
+    font-family:serif; 
+    margin-left: 64%; 
+    border-style: double; 
+    border-width: 3px;
+    transition-property: all;
+    transition-duration: 6s;
+    transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    transition-delay: 3s;
+    animation: about  4s 0s infinite forwards
+}
+@keyframes about {
+    0%{background-color:rgb(75, 75, 75);} 
+    25%{background-color:rgb(131, 131, 131);}
+    50%{background-color:rgb(40, 40, 41);}
+    100%{background-color:rgb(0, 0, 0);}
+}
+.content .bold{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    animation-name: text;
+    animation-duration: 5s;
+    background-color: #333;
+    animation-iteration-count: infinite;
+}
+@keyframes text
+    {0%{color:rgb(75, 75, 75); font-size: large;} 
+    25%{color:rgb(131, 131, 131); font-size: larger;}
+    50%{color:rgb(136, 136, 139);}
+    100%{color:rgb(254, 251, 251);}
+}
+.image {
+    width: 50%;
+    height: 80%;
+    padding-right: 20px;
+    border-radius: 30%;
+    transition-property: all;
+    transition-duration: 4s;
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    
+}

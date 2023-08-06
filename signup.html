@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <title>Login - Trendify</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Trendify</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h1>Sign up to Trendify</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required placeholder="Enter your username">
+            <label for="Phoneno">Phone Number:</label>
+            <input type="number" id="Phoneno" required placeholder="931XXXXXXX">
+            <label for="Email">Email:</label>
+            <input type="email" id="Emial" required placeholder="example@gmail.com">
+            <label for="password">Password:</label>
+            <input type="password" id="password" required placeholder="Enter your password">
+            <label for="repassword">Re-Enter Password:</label>
+            <input type="password" id="repassword" required placeholder="Re-enter your password">
+            <button type="submit">Signup</button>
+    </div>
+
+    <script>
+        const loginForm = document.getElementById("loginForm");
+
+    loginForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+  // Get the username and password from the form
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  const email = document.getElementById("Email").value;
+  const Phoneno = document.getElementById("Phoneno").value;
+
+  // Here, you would typically perform an AJAX request to a server for authentication
+  // For demonstration purposes, we'll just show an alert indicating successful login
+  alert(`Welcome, ${username}! You are now logged in.`);
+});
+
+
+    </script>
+</body>
+<footer style="font-size: small;">
+    <p>TRENDIFY<br>~Nishtha Goel(2162061)<br>
+    </p>
+</footer>
+</html>

@@ -1,0 +1,171 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgba(53, 49, 49, 1);
+    color: #fff;
+   
+}
+
+header {
+    background-color: #0e0d0d;
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top:0px;
+}
+
+.logo {
+    margin: 0;
+    padding: 8px;
+
+}
+
+nav ul {
+    list-style: none;
+    margin-right: 30px ;
+    padding: 2px;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Same styles as before */
+
+/* Additional styles for the homepage */
+.hero {
+    background-image: url('image_1.jpg');
+    
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+     
+}
+.hero-content {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+}
+.hero-image {
+    background-image: url("image_1.jpg");
+
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 5px 10px #121212;
+    box-shadow: 10px 10px 5px #121212 ;
+    animation-name: box;
+    animation-duration: 5s;
+    background-color: #333;
+    animation-iteration-count: infinite;
+    width: 400px;
+    height: 100%;
+}
+@keyframes box
+    {0%{background-color:rgb(75, 75, 75);} 
+    25%{background-color:rgb(131, 131, 131);}
+    50%{background-color:rgb(40, 40, 41);}
+    100%{background-color:rgb(0, 0, 0);}}
+
+
+.content {
+    display: inline;
+    align-items: center;
+    font-style: inherit;
+    text-align: center;
+    padding-inline: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.image {
+    max-width: 200px;
+    margin-right: 20px;
+    margin-top: 50%;
+    opacity: 0.8; 
+}
+.image:after{
+    content:""; 
+  position: absolute; 
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%,rgba(255,255,255,1) 100%);
+  height: 100%; 
+}
+
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}

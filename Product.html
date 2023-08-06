@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>TRENDIFY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Trendify - Your Fashion Destination</title>
+</head>
+<body>
+    <header>
+        <h1 class="logo">Trendify</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Product.html">Product</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <script>
+        function showProductDetails(title, price, description) {
+  const modal = document.getElementById("modal");
+  const modalTitle = document.getElementById("modal-title");
+  const modalPrice = document.getElementById("modal-price");
+  const modalDescription = document.getElementById("modal-description");
+
+  modalTitle.textContent = title;
+  modalPrice.textContent = price;
+  modalDescription.textContent = description;
+
+  modal.style.display = "block";
+}
+
+function hideModal() {
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
+
+function changeImage1(image1) {
+    var image1 = document.getElementById('image1');
+    image1.src = 'like.png';
+}
+function changeImage2(image2) {
+    var image = document.getElementById('image2');
+    image.src = 'like.png';
+}
+function changeImage3(image3) {
+    var image = document.getElementById('image3');
+    image.src = 'like.png';
+}
+function changeImage4(image4) {
+    var image = document.getElementById('image4');
+    image.src = 'like.png';
+}
+function res(){
+  alert("Added to Cart");
+}
+
+    </script>
+    <div class="container">
+        <center><h1>PRODUCT</h1></center>
+    <table>
+        <tr>
+            <td class="column" ><p>          </p> 
+                <iframe src="image 6.png" height="239" width="264" name="welcome" bgcolor="black"> 
+                </iframe> 
+    </td>
+    <td class="column" >
+        <p>      </p> 
+        <iframe src="image 5.png" height="239" width="264" name="welcome" bgcolor="black"> 
+        </iframe>
+          
+    </td>
+    <td class="column" >
+        <p>        </p> 
+        <iframe src="image 4.png" height="239" width="264" name="welcome" bgcolor="black"> 
+        </iframe> 
+     
+
+    </td> 
+    <td class="column" >
+        <p>        </p> 
+        <iframe src="image 3.png" height="239" width="264" name="welcome" bgcolor="black"> 
+        </iframe> 
+     
+
+    </td>
+    </tr>
+    <tr >
+        <td class="column2" ><div
+        onclick="showProductDetails('Flower Pot', 'Rs 800', 'Trendify s flower pots combine style and functionality, elevating your gardening experience with stunning designs for indoor elegance and outdoor delight. Nurturing nature has never been more beautiful.')">
+    <p><a>Flower Pot</a></p> </div> 
+    <p><button onclick="res()">Add to Cart</button><a onclick='changeImage1(this)'><img id="image1" src="heart (2).png" style="height: 22px; padding-left: 30px; "></a></p>
+    </td>
+    <td class="column2"><div onclick="showProductDetails('Tote','Rs 200','Trendify s tote bag collection merges fashion and practicality, offering a diverse range of stylish designs for every occasion, from chic urban outings to eco-conscious shopping endeavors. Embrace the allure of our tote bags, where fashion meets functionality, making a sustainable statement with every carry.')">
+    <p><a>Tote</a></p> </div>
+    <p><button onclick="res()">Add to Cart</button><a onclick='changeImage2(this)'><img id="image2" src="heart (2).png" style="height: 22px; padding-left: 30px; "></a></p>
+</td>
+    <td class="column2"><div onclick="showProductDetails('Sweater', 'Rs 500', 'Trendify s sweater collection embodies fashion-forward designs and cozy comfort, providing a versatile range of styles to suit any taste or season. Elevate your wardrobe with our exquisite sweaters, where warmth meets elegance, and embrace the perfect blend of fashion and functionality for a timeless and chic look.')">
+    <p><a>Sweater</a></p> </div>
+    <p><button onclick="res()">Add to Cart</button><a onclick='changeImage3(this)'><img id="image3" src="heart (2).png" style="height: 22px; padding-left: 30px; "></a></p>
+    </td>
+    <td class="column2"><div onclick="showProductDetails('Serum', 'Rs 900', 'Trendify s serum collection combines cutting-edge skincare technology and luxurious formulations, delivering a transformative experience for your skin. Indulge in the ultimate fusion of beauty and science, where our serums redefine skincare, leaving you with radiant and nourished skin you will love.')">
+        <p><a>Serum</a></p></div> 
+        <p><button onclick="res()">Add to Cart</button><a onclick='changeImage4(this)'><img id="image4" src="heart (2).png" style="height: 22px; padding-left: 30px; "></a></p>
+    </td>
+      </tr>
+    </table>
+</div>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModal()">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-price"></p>
+        <p id="modal-description"></p>
+    </div>
+</div>
+
+    <footer>
+        <p>TRENDIFY<br> trendify.service@gmail.com<br>~Nishtha Goel(2162061)
+        </p>
+    </footer>
+</body>
+</html>
