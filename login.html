@@ -11,7 +11,7 @@
         <h1 class="logo">Trendify</h1>
         <nav>
             <ul class="menu">
-                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="About.html">About</a></li>
                 <li><a href="Product.html">Product</a></li>
                 <li><a href="Contact.html">Contact</a></li>
@@ -19,16 +19,16 @@
             </ul>
         </nav>
     </header>
-    <div class="login-container">
+    <div class="login-container" method="Post" action="login.php">
         <h1>Login to Trendify</h1>
-        <form id="loginForm">
+        <form action="login.php" method="post">
             <label for="username">Username:</label>
-            <input type="text" id="username" required placeholder="Enter your username">
+            <input type="text" name="username" id="username" required><br><br>
+            
             <label for="password">Password:</label>
-            <input type="password" id="password" required placeholder="Enter your password">
-            <button type="submit">Login</button>
-            <label for="password">Do not have account?</label>
-            <button type="button" onclick="window.location.href = 'signup.html';">Sign up</button>
+            <input type="password" name="password" id="password" required><br><br>
+            
+            <input type="submit" value="Login">
         </form>
     </div>
 
